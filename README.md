@@ -8,3 +8,5 @@ scrip ini akan menghapus file sampah pada windows 10
 "C:\Users\R\AppData\Local\Temp"
 
 "C:\Windows\Temp" 
+
+RecycleBin 
