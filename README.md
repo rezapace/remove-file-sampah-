@@ -39,3 +39,5 @@ Script di atas akan menghapus semua file yang ada di recycle bin.
 3. Tekan Enter untuk menjalankan script.
 4. Tunggu hingga proses selesai.
 5. File sampah pada direktori yang telah disebutkan di atas akan terhapus.
+
+
