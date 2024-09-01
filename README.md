@@ -1,43 +1,39 @@
-# Remove File Sampah
+# Junk File Remover
 
-Script ini akan menghapus file sampah pada Windows 10 dengan 1 kali klik. File sampah yang akan dihapus adalah:
+This script will delete junk files on Windows 10 with a single click. The junk files that will be deleted are located in the following directories:
 
-- "C:\Windows\Prefetch"
-- "C:\Users\R\AppData\Local\Temp"
-- "C:\Windows\Temp"
+- `C:\Windows\Prefetch`
+- `C:\Users\R\AppData\Local\Temp`
+- `C:\Windows\Temp`
 
-## Penjelasan Script
+## Script Explanation
 
-```
+```powershell
 Get-ChildItem -Path "C:\Windows\Temp" *.* -Recurse | Remove-Item -Force -Recurse
 ```
+The above script will delete all files with any extension in the `C:\Windows\Temp` directory and its subdirectories.
 
-Script di atas akan menghapus semua file dengan ekstensi apa saja pada direktori "C:\Windows\Temp" beserta subdirektorinya.
-
-```
+```powershell
 Get-ChildItem -Path "C:\Users\R\AppData\Local\Temp" *.* -Recurse | Remove-Item -Force -Recurse
 ```
+The above script will delete all files with any extension in the `C:\Users\R\AppData\Local\Temp` directory and its subdirectories.
 
-Script di atas akan menghapus semua file dengan ekstensi apa saja pada direktori "C:\Users\R\AppData\Local\Temp" beserta subdirektorinya.
-
-```
+```powershell
 Get-ChildItem -Path "C:\Windows\Prefetch" *.* -Recurse | Remove-Item -Force -Recurse
 ```
+The above script will delete all files with any extension in the `C:\Windows\Prefetch` directory and its subdirectories.
 
-Script di atas akan menghapus semua file dengan ekstensi apa saja pada direktori "C:\Windows\Prefetch" beserta subdirektorinya.
-
-```
+```powershell
 Clear-RecycleBin -Force
 ```
+The above script will delete all files in the recycle bin.
 
-Script di atas akan menghapus semua file yang ada di recycle bin.
+## How to Use
 
-## Cara Menggunakan
+1. Open PowerShell by right-clicking on the Start Menu and selecting "Windows PowerShell".
+2. Copy the script above and paste it into PowerShell.
+3. Press Enter to run the script.
+4. Wait until the process is complete.
+5. The junk files in the specified directories will be deleted.
 
-1. Buka PowerShell dengan cara klik kanan pada Start Menu dan pilih "Windows PowerShell".
-2. Copy script di atas dan paste ke PowerShell.
-3. Tekan Enter untuk menjalankan script.
-4. Tunggu hingga proses selesai.
-5. File sampah pada direktori yang telah disebutkan di atas akan terhapus.
-
-
+This structure provides a clear and concise explanation of the script, making it easy to understand and follow.
